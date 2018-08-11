@@ -1,0 +1,2 @@
+!function(e,s){"object"==typeof exports&&"undefined"!=typeof module?s(require("cssthis-parse"),require("cssthis")):"function"==typeof define&&define.amd?define(["cssthis-parse","cssthis"],s):s(e.parse,e.cssthis)}(this,function(e,s){var t=(e=e&&e.hasOwnProperty("default")?e.default:e)([],!0);s.style.parse=function(e){return Function("props","return`"+t(e)+"`")}});
+//# sourceMappingURL=cssthis-parse-browser.umd.js.map

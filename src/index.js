@@ -1,6 +1,7 @@
 import parse from "cssthis-parse";
-import { style } from "cssthis";
+import { style as preact } from "cssthis";
+import { style as react } from "cssthis-react";
 
 let load = parse([], true);
 
-style.parse = css => Function("props", `return\`${load(css)}\``);
+react.parse = preact.parse = css => Function("props", `return\`${load(css)}\``);

@@ -1,13 +1,14 @@
 {
   "name": "cssthis-parse-browser",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "This library allows you to test cssthis, without the need for bundle tools",
   "main": "dist/cssthis-parse-browser.js",
   "umd:main": "dist/cssthis-parse-browser.umd.js",
   "module": "dist/cssthis-parse-browser.m.js",
   "source": "src/index.js",
   "scripts": {
-    "build": "microbundle --externals 'none'"
+    "build": "microbundle",
+    "prepublish" : "npm run build"
   },
   "author": "Matias Trujillo Olivares",
   "license": "ISC",
@@ -16,9 +17,9 @@
     "url": "https://github.com/UpperCod/cssthis-parse-browser.git"
   },
   "dependencies": {
-    "cssthis": "^0.1.2",
+    "cssthis": "^0.1.3",
     "cssthis-parse": "^0.0.5",
-    "cssthis-react": "^0.0.0",
+    "cssthis-react": "^0.0.2",
     "postcss": "^7.0.2"
   },
   "devDependencies": {
